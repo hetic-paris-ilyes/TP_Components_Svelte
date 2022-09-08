@@ -90,6 +90,7 @@
     align-items: center;
     box-shadow: 2px 0px 5px 0em grey;
     border: 3px solid white;
+    
   }
 
   .avatar-wrapper:hover {

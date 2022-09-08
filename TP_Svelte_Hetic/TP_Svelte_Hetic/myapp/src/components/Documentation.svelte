@@ -70,19 +70,19 @@
       picture, initials or fallback icon.
     </p>
     <Avatar
+      state="online"
+      name="Mikael Blomkvist"
+      src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
+    />
+    <Avatar
       state="busy"
       name="Mikael Blomkvist"
       src="https://i.pinimg.com/originals/3e/79/60/3e796019c03bc5502f39e5dba0d57030.jpg"
     />
 
-    <Avatar
-      state="online"
-      name="Mikael Blomkvist"
-      src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
-    />
 
     <Avatar
-      state="online"
+      state="offline"
       name="Mikael Blomkvist"
       src="https://images.hdqwalls.com/download/1/cute-kitty.jpg"
     />
@@ -178,7 +178,7 @@
     </div>
     <!-- // END AVATARGROUP -->
 
-    <GradientGenerator/> -->
+    <GradientGenerator/>
     <Player pathAudio="/src/assets/apdl.mp4"/>
   </div>
 </div>
