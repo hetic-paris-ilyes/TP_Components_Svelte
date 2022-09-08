@@ -72,19 +72,20 @@
       picture, initials or fallback icon.
     </p>
     <Avatar
-      state="busy"
-      name="Mikael Blomkvist"
-      src="https://i.pinimg.com/originals/3e/79/60/3e796019c03bc5502f39e5dba0d57030.jpg"
-    />
-
-    <Avatar
       state="online"
       name="Mikael Blomkvist"
       src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
     />
+    <Avatar
+      state="busy"
+      name="Mikael Blomkvist"
+      src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
+    />
+
+
 
     <Avatar
-      state="online"
+      state="offline"
       name="Mikael Blomkvist"
       src="https://images.hdqwalls.com/download/1/cute-kitty.jpg"
     />
@@ -179,6 +180,7 @@
       </table>
     </div>
     <!-- // END AVATARGROUP -->
+
     <h1 id="gradientgenerator">The Gradient Generator</h1>
     <p>
       The Gradient Generator component is used to create a gradient and copy the css linked to it.
@@ -192,7 +194,8 @@
  <p>
    The MP4 Player component is used to play a video and interact with !
  </p>
-    <Player pathAudio="/src/assets/apdl.mp4"/>
+ 
+ <Player pathAudio="/src/assets/apdl.mp4"/>
 
     <h3>Usage</h3>
     <pre><code> {'<Player pathAudio="cheminverslavideo.mp4" />'} </code></pre>

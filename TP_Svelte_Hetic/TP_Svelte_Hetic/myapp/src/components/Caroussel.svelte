@@ -63,21 +63,21 @@
         <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
       </svg></button>
   </div>
+  {#if showIndex}
+    <div class="counter"><span>{ref + 1} / {pictures.length}</span></div>
+  {/if}
+  
+  <div class="indicators-wrapper">
+    {#each pictures as picture, index}
+      <li
+        class="indicator"
+        class:highlight={ref === index}
+        on:click={() => (ref = index)}
+      />
+    {/each}
+  </div>
 </figure>
 
-{#if showIndex}
-  <span>{ref + 1} / {pictures.length}</span>
-{/if}
-
-<div class="indicators-wrapper">
-  {#each pictures as picture, index}
-    <li
-      class="indicator"
-      class:highlight={ref === index}
-      on:click={() => (ref = index)}
-    />
-  {/each}
-</div>
 
 <style>
   h1 {
@@ -94,6 +94,12 @@
     list-style: none;
   }
 
+  .counter {
+    max-width : 100%; 
+    padding: 0px 5px; 
+    text-align: right;
+    transform: translate(-10px, -30px);
+  }
   .highlight {
     background-color: gray;
     transform: scale(1.2);

@@ -19,9 +19,13 @@
   
   div {
     display: flex;
+    height: 65px;
+    width: 100%; 
   }
 
   :global(.avatar-group .avatar-wrapper) {
-    margin: -60px;
+    margin: 0px;
+    margin-inline-start: -0.75rem;
+
   }
 </style>
