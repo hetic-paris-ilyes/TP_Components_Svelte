@@ -57,7 +57,7 @@
 
   #drawer-toggle {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
   }
 
   #drawer-toggle-label {
@@ -71,7 +71,7 @@
     height: 50px;
     width: 50px;
     display: block;
-    position: fixed;
+    position: relative;
     background: rgba(255, 255, 255, 0);
     z-index: 1;
   }

@@ -9,6 +9,9 @@
   import Timer from "./Timer.svelte";
   import Table from "./Table.svelte";
   import { tableData } from "../static/tableData";
+  import Button from "./Button.svelte";
+  import Modal from "./Modal.svelte";
+  import Drawer from "./Drawer.svelte";
 
   const exampleTable = `[{
     name: 'Kapabangala',
@@ -429,6 +432,143 @@
       </div>
     </div>
     <!-- // END TIMER -->
+    <!-- // Button -->
+    <h1 id="Button">Button</h1>
+    <p>
+      Button component is used to trigger an action or event, such as submitting
+      a form, opening a Dialog, canceling an action, or performing a delete
+      operation.
+    </p>
+
+    <Button text="default value" size="25" url="#Button" />
+
+    <h3>Usage</h3>
+    <pre><code> {'<Button text = "default value" size = 25/>'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>text</td>
+          <td>String</td>
+          <td>"default value"</td>
+        </tr>
+        <tr>
+          <td>size</td>
+          <td>Integer</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>String</td>
+          <td>"#fff"</td>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>String</td>
+          <td>"#319795"</td>
+        </tr>
+        <tr>
+          <td>ftfam</td>
+          <td>String</td>
+          <td>"Helvetica Neue"</td>
+        </tr>
+        <tr>
+          <td>url</td>
+          <td>String</td>
+          <td>"#"</td>
+        </tr>
+      </table>
+    </div>
+    <!-- // END Button-->
+    <!-- // Modal -->
+    <h1 id="Modal">Modal</h1>
+    <p>
+      A modal is a dialog that focuses the user's attention exclusively on an
+      information via a window that is overlaid on primary content.
+    </p>
+    <Modal title="Here i am" color="black" />
+
+    <h3>Usage</h3>
+    <pre><code> {'<Modal title = "Here i am" color = "black"/>'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>title</td>
+          <td>String</td>
+          <td>"Here i am"</td>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>String</td>
+          <td
+            >"Thank to pop me out of that button, but now i'm done so you can
+            close this window."</td
+          >
+        </tr>
+        <tr>
+          <td>size</td>
+          <td>Number</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>String</td>
+          <td>"black"</td>
+        </tr>
+        <tr>
+          <td>psize</td>
+          <td>Number</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>pcolor</td>
+          <td>String</td>
+          <td>"black"</td>
+        </tr>
+      </table>
+    </div>
+    <!-- // END Modal-->
+    <!-- // Drawer -->
+    <h1 id="Drawer">Drawer</h1>
+    <p>
+      The Drawer component is a panel that slides out from the edge of the
+      screen. It can be useful when you need users to complete a task or view
+      some details without leaving the current page.
+    </p>
+    <Drawer />
+
+    <h3>Usage</h3>
+    <pre><code> {'<Drawer props1="props1" props2="props2"/>'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>propsName</td>
+          <td>Type</td>
+          <td>"example"</td>
+        </tr>
+      </table>
+    </div>
+    <!-- // END Drawer-->
   </div>
 </div>
 
