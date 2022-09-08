@@ -3,6 +3,8 @@
   import Avatar from "./Avatar.svelte";
   import AvatarGroup from "./AvatarGroup.svelte";
   import Logo from "../assets/roosveltes.png";
+  import GradientGenerator from './GradientGenerator.svelte';
+  import Player from './Player.svelte';
 </script>
 
 <img src={Logo} alt="logo" id="logo" />
@@ -175,6 +177,9 @@
       </table>
     </div>
     <!-- // END AVATARGROUP -->
+
+    <GradientGenerator/> -->
+    <Player pathAudio="/src/assets/apdl.mp4"/>
   </div>
 </div>
 
