@@ -1,8 +1,8 @@
 <script>
   export let pictures = [
-    "https://i.pinimg.com/originals/3e/79/60/3e796019c03bc5502f39e5dba0d57030.jpg",
-    "https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg",
-    "https://images.hdqwalls.com/download/1/cute-kitty.jpg",
+    "https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Cerisier-du-japon-japonais-Prunus-serrulata.jpg",
+    "https://jardinage.lemonde.fr/images/dossiers/historique/baobab-170659.jpg",
+    "https://voyagerloin.com/wp-content/uploads/2014/07/amazing-trees-1-2.jpg",
   ];
 
   export let interval = 2500;

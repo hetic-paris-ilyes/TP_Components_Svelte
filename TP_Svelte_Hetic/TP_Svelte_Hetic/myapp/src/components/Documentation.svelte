@@ -49,21 +49,21 @@
         picture, initials or fallback icon.
       </p>
       <Avatar
+          state="busy"
+          name="Cerisier"
+          src="https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Cerisier-du-japon-japonais-Prunus-serrulata.jpg"
+        />
+        <Avatar
         state="online"
-        name="Mikael Blomkvist"
-        src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
-      />
-      <Avatar
-        state="busy"
-        name="Mikael Blomkvist"
-        src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
+        name="Baobab"
+        src="https://jardinage.lemonde.fr/images/dossiers/historique/baobab-170659.jpg"
       />
 
       <Avatar
-        state="offline"
-        name="Mikael Blomkvist"
-        src="https://images.hdqwalls.com/download/1/cute-kitty.jpg"
-      />
+          state="online"
+          name="Arbre cool"
+          src="https://voyagerloin.com/wp-content/uploads/2014/07/amazing-trees-1-2.jpg"
+        />
 
       <h3>Usage</h3>
       <pre><code> {'<Avatar name="Mikael Blomkvist" size="md" state="online" />'} </code></pre>
@@ -105,28 +105,25 @@
     <div>
       <h1 id="avatarGroup">Avatar Group</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-        recusandae quam ratione nesciunt debitis praesentium dolore omnis,
-        necessitatibus repudiandae ut mollitia! Totam unde natus quibusdam.
-        Facere incidunt tempore magni excepturi?
+        This avatar component is used to group avatars.
       </p>
       <AvatarGroup group>
         <Avatar
           state="busy"
-          name="Mikael Blomkvist"
-          src="https://i.pinimg.com/originals/3e/79/60/3e796019c03bc5502f39e5dba0d57030.jpg"
+          name="Cerisier"
+          src="https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Cerisier-du-japon-japonais-Prunus-serrulata.jpg"
         />
 
         <Avatar
           state="online"
-          name="Mikael Blomkvist"
-          src="https://wallup.net/wp-content/uploads/2018/10/07/458379-cat-animal-pet-cats-kitty-cute-sweet.jpg"
+          name="Baobab"
+          src="https://jardinage.lemonde.fr/images/dossiers/historique/baobab-170659.jpg"
         />
 
         <Avatar
           state="online"
-          name="Mikael Blomkvist"
-          src="https://images.hdqwalls.com/download/1/cute-kitty.jpg"
+          name="Arbre cool"
+          src="https://voyagerloin.com/wp-content/uploads/2014/07/amazing-trees-1-2.jpg"
         />
       </AvatarGroup>
       <h3>Usage</h3>
@@ -155,9 +152,60 @@
     </div>
     <!-- // END AVATARGROUP -->
 
-    <!-- // BUTTON -->
-    <div />
-    <!-- //END BUTTON -->
+       <!-- // Button -->
+       <h1 id="button">Button</h1>
+       <p>
+         Button component is used to trigger an action or event, such as submitting
+         a form, opening a Dialog, canceling an action, or performing a delete
+         operation.
+       </p>
+   
+       <Button text="default value" size="25" url="#Button" />
+   
+       <h3>Usage</h3>
+       <pre><code> {'<Button text = "default value" size = 25/>'} </code></pre>
+       <h3>Props</h3>
+       <div class="table">
+         <table>
+           <tr>
+             <th>Name</th>
+             <th>Type</th>
+             <th>Value</th>
+           </tr>
+   
+           <tr>
+             <td>text</td>
+             <td>String</td>
+             <td>"default value"</td>
+           </tr>
+           <tr>
+             <td>size</td>
+             <td>Integer</td>
+             <td>25</td>
+           </tr>
+           <tr>
+             <td>color</td>
+             <td>String</td>
+             <td>"#fff"</td>
+           </tr>
+           <tr>
+             <td>bgcolor</td>
+             <td>String</td>
+             <td>"#319795"</td>
+           </tr>
+           <tr>
+             <td>ftfam</td>
+             <td>String</td>
+             <td>"Helvetica Neue"</td>
+           </tr>
+           <tr>
+             <td>url</td>
+             <td>String</td>
+             <td>"#"</td>
+           </tr>
+         </table>
+       </div>
+       <!-- // END Button-->
 
     <!-- // CARROUSEL -->
     <div>
@@ -223,7 +271,7 @@
 
     <!-- // ICONSGENERATOR -->
     <div>
-      <h1 id="iconsGenerator">Icons Generator</h1>
+      <h1 id="icons">Icons Generator</h1>
       <p>
         The Icons Generator component is used to quickly add icons to your
         project.
@@ -330,16 +378,12 @@
           <tr>
             <td>pathAudio</td>
             <td>String</td>
-            <td>"../assets/audidefou.mp3"</td>
+            <td>"../assets/audiodefou.mp3"</td>
           </tr>
         </table>
       </div>
     </div>
     <!-- // END MP4 PLAYER -->
-
-    <!-- // POPUP -->
-    <div />
-    <!-- // END POPUP -->
 
     <!-- //TABLE -->
     <div>
@@ -395,7 +439,7 @@
         It's a timer. You can let it count onMounted of the page or you can use
         some controls and inputs to set the value of the timer.
       </p>
-      <Timer />
+      <Timer displayControls={true} displayInputs={true}/>
       <h3>Usage</h3>
       <pre><code> {'<Timer colorTimer="black" displayInputs={true} displayControls={true} minutesTimer={1} secondsTimer={45} />'} </code></pre>
       <h3>Props</h3>
@@ -436,62 +480,8 @@
       </div>
     </div>
     <!-- // END TIMER -->
-    <!-- // Button -->
-    <h1 id="Button">Button</h1>
-    <p>
-      Button component is used to trigger an action or event, such as submitting
-      a form, opening a Dialog, canceling an action, or performing a delete
-      operation.
-    </p>
-
-    <Button text="default value" size="25" url="#Button" />
-
-    <h3>Usage</h3>
-    <pre><code> {'<Button text = "default value" size = 25/>'} </code></pre>
-    <h3>Props</h3>
-    <div class="table">
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Value</th>
-        </tr>
-
-        <tr>
-          <td>text</td>
-          <td>String</td>
-          <td>"default value"</td>
-        </tr>
-        <tr>
-          <td>size</td>
-          <td>Integer</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td>color</td>
-          <td>String</td>
-          <td>"#fff"</td>
-        </tr>
-        <tr>
-          <td>bgcolor</td>
-          <td>String</td>
-          <td>"#319795"</td>
-        </tr>
-        <tr>
-          <td>ftfam</td>
-          <td>String</td>
-          <td>"Helvetica Neue"</td>
-        </tr>
-        <tr>
-          <td>url</td>
-          <td>String</td>
-          <td>"#"</td>
-        </tr>
-      </table>
-    </div>
-    <!-- // END Button-->
     <!-- // Modal -->
-    <h1 id="Modal">Modal</h1>
+    <h1 id="popup">Modal</h1>
     <p>
       A modal is a dialog that focuses the user's attention exclusively on an
       information via a window that is overlaid on primary content.
