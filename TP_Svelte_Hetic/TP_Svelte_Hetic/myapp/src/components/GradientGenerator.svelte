@@ -5,17 +5,10 @@
     let breakpoint1= 0;
     let color2= "#633D35";
     let breakpoint2= 0;
-    let color3= "#0E2C6F";
+    let color3= "#639b96";
     let breakpoint3= 0;
   
 </script>  
-
- <!-- // NOMDUCOMPOSANT -->
- <h1 id="nomducomposant">The Gradient Generator</h1>
- <p>
-   The Gradient Generator component is used to create a gradient and copy the css linked to it.
- </p>
-
 
  <div class="main">
   Code CSS à copier : <b>background: linear-gradient({range}deg, {color1} {breakpoint1}%,{color2} {breakpoint2}% ,{color3} {breakpoint3}%) </b>
@@ -34,9 +27,6 @@
       <input type="range" min="0" max="100" bind:value={ breakpoint3}/>
       <div style="background: linear-gradient({range}deg, {color1} {breakpoint1}%,{color2} {breakpoint2}% ,{color3} {breakpoint3}%); height:100px; width: 500px; margin-top: 20px; border-radius: 30px;"/>   
   </div>
-
- <h3>Usage</h3>
- <pre><code>{'<GradientGenerator/>'}</code></pre>
 <style>
 
 </style>

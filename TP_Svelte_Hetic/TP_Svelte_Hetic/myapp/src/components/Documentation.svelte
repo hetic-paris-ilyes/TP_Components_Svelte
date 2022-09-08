@@ -17,6 +17,8 @@
       <li><a href="#avatarGroup">AvatarGroup</a></li>
       <li><a href="#caroussel">Caroussel</a></li>
       <li><a href="#icons">Icons</a></li>
+      <li><a href="#gradientgenerator">GradientGenerator</a></li>
+      <li><a href="#player">Player</a></li>
     </ul>
   </div>
   <div class="main">
@@ -177,14 +179,53 @@
       </table>
     </div>
     <!-- // END AVATARGROUP -->
-
-    <GradientGenerator/> -->
+    <h1 id="gradientgenerator">The Gradient Generator</h1>
+    <p>
+      The Gradient Generator component is used to create a gradient and copy the css linked to it.
+    </p>
+    <GradientGenerator/> 
+    
+ <h3>Usage</h3>
+ <pre><code>{'<GradientGenerator/>'}</code></pre>
+ 
+ <h1 id="player">MP4 Player</h1>
+ <p>
+   The MP4 Player component is used to play a video and interact with !
+ </p>
     <Player pathAudio="/src/assets/apdl.mp4"/>
+
+    <h3>Usage</h3>
+    <pre><code> {'<Player pathAudio="cheminverslavideo.mp4" />'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+  
+        <tr>
+          <td>pathAudio</td>
+          <td>String</td>
+          <td
+            >"../assets/videodefou.mp4"</td
+          >
+        </tr>
+        <tr>
+          <td>pathAudio</td>
+          <td>String</td>
+          <td
+            >"../assets/audidefou.mp3"</td
+          >
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
 
 <div id="copyright">
-  Copyright Roosevelt 2022 - Ilyes Boulkrinat, Vincent Monneger, Rakule Th,
+  Copyright Roosevelt 2022 - Ilyes Boulkrinat, Vincent Monneger, Rakule Thavarasa,
   Daisy Bruneau
 </div>
 
