@@ -5,7 +5,7 @@
   export let displayControls = false
 
   export let secondsTimer = 0
-  export let minutesTimer = 1
+  export let minutesTimer = 15
 
   let identifier
   let hasStarted = false

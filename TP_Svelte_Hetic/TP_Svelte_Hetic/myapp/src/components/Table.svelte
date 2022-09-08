@@ -11,7 +11,7 @@
     <thead>
       <tr>
         {#each Object.keys(tableData[0]) as columnHeading}
-          <th class={gap} style="border-color: {borderColor}">{columnHeading.charAt(0).toUpperCase() + columnHeading.slice(1)}</th>
+          <th class={gap} style="border-color: {borderColor}; text-align: center;">{columnHeading.charAt(0).toUpperCase() + columnHeading.slice(1)}</th>
         {/each}
       <tr/>
     </thead>
@@ -27,7 +27,7 @@
     <tfoot>
       <tr>
         {#each Object.keys(tableData[0]) as columnFooter}
-          <th class={gap}>{columnFooter.charAt(0).toUpperCase() + columnFooter.slice(1)}</th>
+          <th class={gap} style="text-align: center;">{columnFooter.charAt(0).toUpperCase() + columnFooter.slice(1)}</th>
         {/each}
       <tr/>
     </tfoot>

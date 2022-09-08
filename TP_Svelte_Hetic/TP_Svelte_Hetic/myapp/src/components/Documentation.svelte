@@ -5,6 +5,16 @@
   import Logo from "../assets/roosveltes.png";
   import GradientGenerator from './GradientGenerator.svelte';
   import Player from './Player.svelte';
+  import Timer from './Timer.svelte';
+  import Table from './Table.svelte';
+  import {tableData} from '../static/tableData'
+
+  const exampleTable = `[{
+    name: 'Kapabangala',
+    age: '45',
+    ville: 'Paris',
+    job: 'dev'
+  }]`
 </script>
 
 <img src={Logo} alt="logo" id="logo" />
@@ -224,6 +234,92 @@
         </tr>
       </table>
     </div>
+    <!-- //TIMER -->
+    <h1 id="timer">Timer</h1>
+    <p>It's a timer. You can let it count onMounted of the page or you can use some controls and inputs to set the value of the timer.</p>
+    <Timer/>
+    <h3>Usage</h3>
+    <pre><code> {'<Timer colorTimer="black" displayInputs={true} displayControls={true} minutesTimer={1} secondsTimer={45} />'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>colorTimer</td>
+          <td>Boolean</td>
+          <td>true | false</td>
+        </tr>
+        <tr>
+          <td>displayInputs</td>
+          <td>Boolean</td>
+          <td>true | false</td>
+        </tr>
+        <tr>
+          <td>displayControls</td>
+          <td>Boolean</td>
+          <td>true | false</td>
+        </tr>
+        <tr>
+          <td>secondsTimer</td>
+          <td>Number</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>minutesTimer</td>
+          <td>Number</td>
+          <td>60</td>
+        </tr>
+      </table>
+    </div>
+    <!-- // END TIMER -->
+    <!-- //TABLE -->
+    <h1 id="timer">Table</h1>
+    <p>It's a table to parse data. Columns are the keys of the first object.</p>
+    <Table tableData={tableData} variant="simple" />
+    <h3>Usage</h3>
+    <pre><code> {'<Table tableData={tableData} variant="simple" />'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>tableData</td>
+          <td>Array&lt;object&gt</td>
+          <td>{exampleTable}</td>
+        </tr>
+        <tr>
+          <td>variant</td>
+          <td>String</td>
+          <td>'simple' | 'striped'</td>
+        </tr>
+        <tr>
+          <td>gap</td>
+          <td>String</td>
+          <td>'sm' | 'md' | 'lg'</td>
+        </tr>
+        <tr>
+          <td>borderColor</td>
+          <td>String</td>
+          <td>'#9AE6B4'</td>
+        </tr>
+        <tr>
+          <td>fontColor</td>
+          <td>String</td>
+          <td>'#9AE6B4'</td>
+        </tr>
+      </table>
+    </div>
+    <!-- // END TABLE -->
   </div>
 </div>
 
