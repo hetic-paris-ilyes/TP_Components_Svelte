@@ -300,12 +300,16 @@
 
     <!-- // MP4 PLAYER -->
     <div>
-      <h1 id="player">MP4 Player</h1>
+      <h1 id="player">MP4/MP3 Player</h1>
       <p>
-        The MP4 Player component is used to play a video and interact with !
+        The MP4/MP3 Player component is used to play a video and interact with !
       </p>
 
       <Player pathAudio="/src/assets/apdl.mp4" />
+      
+      <br>
+
+      <Player pathAudio="/src/assets/antidote.mp3" />
 
       <h3>Usage</h3>
       <pre><code> {'<Player pathAudio="cheminverslavideo.mp4" />'} </code></pre>

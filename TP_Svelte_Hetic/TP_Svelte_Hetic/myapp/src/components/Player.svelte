@@ -78,8 +78,6 @@
      Volume -
      {/if}
    </button>
-   <br>
-   Volume = {volume * 100}
  </nav>
 
 
