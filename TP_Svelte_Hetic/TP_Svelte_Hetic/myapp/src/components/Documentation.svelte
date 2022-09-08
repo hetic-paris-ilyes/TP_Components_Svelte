@@ -212,6 +212,13 @@
             >"../assets/videodefou.mp4"</td
           >
         </tr>
+        <tr>
+          <td>pathAudio</td>
+          <td>String</td>
+          <td
+            >"../assets/audidefou.mp3"</td
+          >
+        </tr>
       </table>
     </div>
   </div>
