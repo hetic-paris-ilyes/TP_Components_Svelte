@@ -1,12 +1,9 @@
 <script>
-  import apdl from '../assets/apdl.mp4';
-  import antidote from '../assets/antidote.mp3';
-import { text } from 'svelte/internal';
 
   export let pathAudio;
+
   let isPaused = true;
   let volume = 1;
-
   let isMp4 = false;
   let muted = false;
   let isPathGood = false;
@@ -51,51 +48,97 @@ import { text } from 'svelte/internal';
 
 
 {#if isMp4}
-<h2>Vidéo Player</h2>
-<div class='audio-container'>
-  <video src={ pathAudio } bind:paused={ isPaused } bind:volume={ volume } bind:muted={ muted }/>
-  <nav>
-    <button class:is-hidden={ !isPaused } on:click={ toggle }>
-      Play 
-    </button>
-    <button class={ isPaused ? 'is-hidden' : '' } on:click={ toggle }>
-      Pause 
-    </button>
-    <button on:click={ mute }>
-      {#if !muted}
-      Mute
-      {:else}
-      Unmute
-      {/if}
-    </button>
-    <button on:click={ volumePlus }>
-      {#if volume == 1}
-      Volume maximum !
-      {:else}
-      Volume + { volume }
-      {/if}
-    </button>
-    <button on:click={ volumeMinus }>
-      {#if volume == 0}
-      Volume minimum
-      {:else}
-      Volume - { volume }
-      {/if}
-    </button>
-  </nav>
-  <br>
-  Ce composant permet de lire un fichier mp3/mp4 en passant en paramètre (pathAudio) le lien vers celui-ci !
-</div>
+
+  <h1 id="nomducomposant">MP4 Player</h1>
+  <p>
+    The MP4 Player component is used to play a video and interact with !
+  </p>
+ <!-- svelte-ignore a11y-media-has-caption -->
+ <video src={ pathAudio } bind:paused={ isPaused } bind:volume={ volume } bind:muted={ muted }/>
+ <nav>
+   <button class:is-hidden={ !isPaused } on:click={ toggle }>
+     Play 
+   </button>
+   <button class={ isPaused ? 'is-hidden' : '' } on:click={ toggle }>
+     Pause 
+   </button>
+   <button on:click={ mute }>
+     {#if !muted}
+     Mute
+     {:else}
+     Unmute
+     {/if}
+   </button>
+   <button on:click={ volumePlus }>
+     {#if volume == 1}
+     Volume maximum !
+     {:else}
+     Volume +
+     {/if}
+   </button>
+   <button on:click={ volumeMinus }>
+     {#if volume == 0}
+     Volume minimum
+     {:else}
+     Volume -
+     {/if}
+   </button>
+   <br>
+   Volume = {volume * 100}
+ </nav>
+
+  <h3>Usage</h3>
+  <pre><code> {'<Player pathAudio="cheminverslavideo.mp4" />'} </code></pre>
+  <h3>Props</h3>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+      </tr>
+
+      <tr>
+        <td>pathAudio</td>
+        <td>String</td>
+        <td
+          >"../assets/videodefou.mp4"</td
+        >
+      </tr>
+    </table>
+  </div>
+
 {:else}
-<h2>MP3 Player</h2>
-<br>
-<div class='audio-container'>
-  <audio controls>
-    <source src={pathAudio}>
-  </audio>
-<br>
-  Ce composant permet de lire un fichier mp3/mp4 en passant en paramètre (pathAudio) le lien vers celui-ci !
-</div>
+
+    <h1 id="nomducomposant">MP3 Player</h1>
+    <p>
+      The MP3 Player component is used to play a video and interact with !
+    </p>
+    <audio controls>
+      <source src={pathAudio}>
+    </audio>
+
+    <h3>Usage</h3>
+    <pre><code> {'<Player pathAudio="cheminverslaudio.mp3" />'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>pathAudio</td>
+          <td>String</td>
+          <td
+            >"../assets/audiodefou.mp3"</td
+          >
+        </tr>
+      </table>
+    </div>
+
 {/if}
 
 <style>

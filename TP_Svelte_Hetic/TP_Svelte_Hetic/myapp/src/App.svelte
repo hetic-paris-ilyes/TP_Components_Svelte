@@ -5,6 +5,6 @@
 </script>
 
 <div>
-    <GradientGenerator/>
-    <!-- <Player pathAudio="/src/assets/antidote.mp3"/> -->
+    <!-- <GradientGenerator/> -->
+    <Player pathAudio="/src/assets/apdl.mp4"/>
 </div>
