@@ -5,6 +5,7 @@
   import Logo from "../assets/roosveltes.png";
   import GradientGenerator from './GradientGenerator.svelte';
   import Player from './Player.svelte';
+import IconsGenerator from "./IconsGenerator.svelte";
   import Timer from './Timer.svelte';
   import Table from './Table.svelte';
   import {tableData} from '../static/tableData'
@@ -396,6 +397,17 @@
     position: relative;
     left: 25%;
     margin-top: 5%;
+  }
+
+  .icons-example_wrapper {
+    margin: 5px 0px; 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
   }
 
   .table {
