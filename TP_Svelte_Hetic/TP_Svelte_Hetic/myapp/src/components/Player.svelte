@@ -48,11 +48,6 @@
 
 
 {#if isMp4}
-
-  <h1 id="nomducomposant">MP4 Player</h1>
-  <p>
-    The MP4 Player component is used to play a video and interact with !
-  </p>
  <!-- svelte-ignore a11y-media-has-caption -->
  <video src={ pathAudio } bind:paused={ isPaused } bind:volume={ volume } bind:muted={ muted }/>
  <nav>
@@ -87,67 +82,22 @@
    Volume = {volume * 100}
  </nav>
 
-  <h3>Usage</h3>
-  <pre><code> {'<Player pathAudio="cheminverslavideo.mp4" />'} </code></pre>
-  <h3>Props</h3>
-  <div class="table">
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Value</th>
-      </tr>
-
-      <tr>
-        <td>pathAudio</td>
-        <td>String</td>
-        <td
-          >"../assets/videodefou.mp4"</td
-        >
-      </tr>
-    </table>
-  </div>
 
 {:else}
-
-    <h1 id="nomducomposant">MP3 Player</h1>
-    <p>
-      The MP3 Player component is used to play a video and interact with !
-    </p>
     <audio controls>
       <source src={pathAudio}>
     </audio>
-
-    <h3>Usage</h3>
-    <pre><code> {'<Player pathAudio="cheminverslaudio.mp3" />'} </code></pre>
-    <h3>Props</h3>
-    <div class="table">
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Value</th>
-        </tr>
-
-        <tr>
-          <td>pathAudio</td>
-          <td>String</td>
-          <td
-            >"../assets/audiodefou.mp3"</td
-          >
-        </tr>
-      </table>
-    </div>
 
 {/if}
 
 <style>
   button {
+    margin-top:5px;
     cursor: pointer;
     outline: 0;
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #639b96;
+    border-color: #639b96;
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
