@@ -184,7 +184,7 @@
 </div>
 
 <div id="copyright">
-  Copyright Roosevelt 2022 - Ilyes Boulkrinat, Vincent Monneger, Rakule Th,
+  Copyright Roosevelt 2022 - Ilyes Boulkrinat, Vincent Monneger, Rakule Thavarasa,
   Daisy Bruneau
 </div>
 
