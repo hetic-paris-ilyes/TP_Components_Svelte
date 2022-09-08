@@ -5,6 +5,7 @@
   import Logo from "../assets/roosveltes.png";
   import GradientGenerator from './GradientGenerator.svelte';
   import Player from './Player.svelte';
+import IconsGenerator from "./IconsGenerator.svelte";
 </script>
 
 <img src={Logo} alt="logo" id="logo" />
@@ -178,8 +179,101 @@
     </div>
     <!-- // END AVATARGROUP -->
 
-    <GradientGenerator/>
-    <Player pathAudio="/src/assets/apdl.mp4"/>
+      <!-- //AVATARGROUP -->
+      <h1 id="iconsGenerator">Icons Generator</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+        recusandae quam ratione nesciunt debitis praesentium dolore omnis,
+        necessitatibus repudiandae ut mollitia! Totam unde natus quibusdam. Facere
+        incidunt tempore magni excepturi?
+      </p>
+      <div class="icons-example_wrapper">
+        <IconsGenerator icon="warning" fillColor="#16a5a3" size={45} border/>
+        <IconsGenerator icon="warning" fillColor="black" size={35}/>
+        <IconsGenerator icon="warning" fillColor="#16a5a3" size={25} border/>
+        <IconsGenerator icon="warning" fillColor="black" size={15}/>
+
+      </div>
+      <div class="icons-example_wrapper">
+        <IconsGenerator icon="phone" fillColor="#16a5a3" size={45} border/>
+        <IconsGenerator icon="phone" fillColor="#black" size={35}/>
+
+        <IconsGenerator icon="phone" fillColor="#16a5a3" size={25} border/>
+        <IconsGenerator icon="phone" fillColor="black" size={15}/>
+
+
+      </div>
+
+      <h3>Usage</h3>
+      <pre><code> {'<IconsGenerator icon="warning" fillColor="#16a5a3" size={45} border/>'} </code></pre>
+      <h3>Props</h3>
+      <div class="table">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Value</th>
+          </tr>
+  
+          <tr>
+            <td>group</td>
+            <td>Boolean</td>
+            <td
+              >true | false</td
+            >
+          </tr>
+          <tr>
+            <td>orientation</td>
+            <td>String</td>
+            <td>"row | column"</td>
+          </tr>
+        </table>
+      </div>
+      <!-- // END AVATARGROUP -->
+
+    <h1 id="gradientgenerator">The Gradient Generator</h1>
+    <p>
+      The Gradient Generator component is used to create a gradient and copy the css linked to it.
+    </p>
+    <GradientGenerator/> 
+    
+ <h3>Usage</h3>
+ <pre><code>{'<GradientGenerator/>'}</code></pre>
+ 
+ <h1 id="player">MP4 Player</h1>
+ <p>
+   The MP4 Player component is used to play a video and interact with !
+ </p>
+ 
+ <Player pathAudio="/src/assets/apdl.mp4"/>
+
+    <h3>Usage</h3>
+    <pre><code> {'<Player pathAudio="cheminverslavideo.mp4" />'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+  
+        <tr>
+          <td>pathAudio</td>
+          <td>String</td>
+          <td
+            >"../assets/videodefou.mp4"</td
+          >
+        </tr>
+        <tr>
+          <td>pathAudio</td>
+          <td>String</td>
+          <td
+            >"../assets/audidefou.mp3"</td
+          >
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -256,6 +350,17 @@
     position: relative;
     left: 25%;
     margin-top: 5%;
+  }
+
+  .icons-example_wrapper {
+    margin: 5px 0px; 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
   }
 
   .table {
