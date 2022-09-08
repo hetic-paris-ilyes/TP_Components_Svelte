@@ -195,7 +195,7 @@
           </tr>
           <tr>
             <td>interval</td>
-            <td>Number</td>
+            <td>Integer</td>
             <td>2500</td>
           </tr>
         </table>
@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td>size</td>
-            <td>Number</td>
+            <td>Integer</td>
             <td>25</td>
           </tr>
           <tr>
@@ -420,12 +420,12 @@
           </tr>
           <tr>
             <td>secondsTimer</td>
-            <td>Number</td>
+            <td>Integer</td>
             <td>60</td>
           </tr>
           <tr>
             <td>minutesTimer</td>
-            <td>Number</td>
+            <td>Integer</td>
             <td>60</td>
           </tr>
         </table>
@@ -520,7 +520,7 @@
         </tr>
         <tr>
           <td>size</td>
-          <td>Number</td>
+          <td>Integer</td>
           <td>25</td>
         </tr>
         <tr>
@@ -529,8 +529,8 @@
           <td>"black"</td>
         </tr>
         <tr>
-          <td>psize</td>
-          <td>Number</td>
+          <td>size</td>
+          <td>Integer</td>
           <td>25</td>
         </tr>
         <tr>
@@ -636,6 +636,7 @@
     overflow: hidden;
   }
   table {
+    width: -webkit-fill-available;
     border-collapse: collapse;
   }
 
