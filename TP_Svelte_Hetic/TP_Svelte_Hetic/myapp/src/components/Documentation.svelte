@@ -541,34 +541,6 @@
       </table>
     </div>
     <!-- // END Modal-->
-    <!-- // Drawer -->
-    <h1 id="Drawer">Drawer</h1>
-    <p>
-      The Drawer component is a panel that slides out from the edge of the
-      screen. It can be useful when you need users to complete a task or view
-      some details without leaving the current page.
-    </p>
-    <Drawer />
-
-    <h3>Usage</h3>
-    <pre><code> {'<Drawer props1="props1" props2="props2"/>'} </code></pre>
-    <h3>Props</h3>
-    <div class="table">
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Value</th>
-        </tr>
-
-        <tr>
-          <td>propsName</td>
-          <td>Type</td>
-          <td>"example"</td>
-        </tr>
-      </table>
-    </div>
-    <!-- // END Drawer-->
   </div>
 </div>
 
