@@ -32,13 +32,11 @@
       <input type="range" min="0" max="100" bind:value={ breakpoint1}/>
       <input type="range" min="0" max="100" bind:value={ breakpoint2}/>
       <input type="range" min="0" max="100" bind:value={ breakpoint3}/>
-      <div style="background: linear-gradient({range}deg, {color1} {breakpoint1}%,{color2} {breakpoint2}% ,{color3} {breakpoint3}%); height:100px; width: 500px; margin-top: 20px;"/>   
+      <div style="background: linear-gradient({range}deg, {color1} {breakpoint1}%,{color2} {breakpoint2}% ,{color3} {breakpoint3}%); height:100px; width: 500px; margin-top: 20px; border-radius: 30px;"/>   
   </div>
 
  <h3>Usage</h3>
  <pre><code>{'<GradientGenerator/>'}</code></pre>
- <h3>Props</h3>
-  Aucun props !
 <style>
 
 </style>

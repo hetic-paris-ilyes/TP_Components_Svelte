@@ -73,7 +73,7 @@
      {#if volume == 1}
      Volume maximum !
      {:else}
-     Volume +
+     Volume + 
      {/if}
    </button>
    <button on:click={ volumeMinus }>
