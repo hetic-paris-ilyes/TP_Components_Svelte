@@ -49,21 +49,21 @@
         picture, initials or fallback icon.
       </p>
       <Avatar
-          state="busy"
-          name="Cerisier"
-          src="https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Cerisier-du-japon-japonais-Prunus-serrulata.jpg"
-        />
-        <Avatar
+        state="busy"
+        name="Cerisier"
+        src="https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Cerisier-du-japon-japonais-Prunus-serrulata.jpg"
+      />
+      <Avatar
         state="online"
         name="Baobab"
         src="https://jardinage.lemonde.fr/images/dossiers/historique/baobab-170659.jpg"
       />
 
       <Avatar
-          state="online"
-          name="Arbre cool"
-          src="https://voyagerloin.com/wp-content/uploads/2014/07/amazing-trees-1-2.jpg"
-        />
+        state="online"
+        name="Arbre cool"
+        src="https://voyagerloin.com/wp-content/uploads/2014/07/amazing-trees-1-2.jpg"
+      />
 
       <h3>Usage</h3>
       <pre><code> {'<Avatar name="Mikael Blomkvist" size="md" state="online" />'} </code></pre>
@@ -104,9 +104,7 @@
     <!-- //AVATARGROUP -->
     <div>
       <h1 id="avatarGroup">Avatar Group</h1>
-      <p>
-        This avatar component is used to group avatars.
-      </p>
+      <p>This avatar component is used to group avatars.</p>
       <AvatarGroup group>
         <Avatar
           state="busy"
@@ -152,60 +150,60 @@
     </div>
     <!-- // END AVATARGROUP -->
 
-       <!-- // Button -->
-       <h1 id="button">Button</h1>
-       <p>
-         Button component is used to trigger an action or event, such as submitting
-         a form, opening a Dialog, canceling an action, or performing a delete
-         operation.
-       </p>
-   
-       <Button text="default value" size="25" url="#Button" />
-   
-       <h3>Usage</h3>
-       <pre><code> {'<Button text = "default value" size = 25/>'} </code></pre>
-       <h3>Props</h3>
-       <div class="table">
-         <table>
-           <tr>
-             <th>Name</th>
-             <th>Type</th>
-             <th>Value</th>
-           </tr>
-   
-           <tr>
-             <td>text</td>
-             <td>String</td>
-             <td>"default value"</td>
-           </tr>
-           <tr>
-             <td>size</td>
-             <td>Integer</td>
-             <td>25</td>
-           </tr>
-           <tr>
-             <td>color</td>
-             <td>String</td>
-             <td>"#fff"</td>
-           </tr>
-           <tr>
-             <td>bgcolor</td>
-             <td>String</td>
-             <td>"#319795"</td>
-           </tr>
-           <tr>
-             <td>ftfam</td>
-             <td>String</td>
-             <td>"Helvetica Neue"</td>
-           </tr>
-           <tr>
-             <td>url</td>
-             <td>String</td>
-             <td>"#"</td>
-           </tr>
-         </table>
-       </div>
-       <!-- // END Button-->
+    <!-- // Button -->
+    <h1 id="button">Button</h1>
+    <p>
+      Button component is used to trigger an action or event, such as submitting
+      a form, opening a Dialog, canceling an action, or performing a delete
+      operation.
+    </p>
+
+    <Button text="default value" size="25" url="#Button" />
+
+    <h3>Usage</h3>
+    <pre><code> {'<Button text = "default value" size = 25/>'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>text</td>
+          <td>String</td>
+          <td>"default value"</td>
+        </tr>
+        <tr>
+          <td>size</td>
+          <td>Integer</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>color</td>
+          <td>String</td>
+          <td>"#fff"</td>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>String</td>
+          <td>"#319795"</td>
+        </tr>
+        <tr>
+          <td>ftfam</td>
+          <td>String</td>
+          <td>"Helvetica Neue"</td>
+        </tr>
+        <tr>
+          <td>url</td>
+          <td>String</td>
+          <td>"#"</td>
+        </tr>
+      </table>
+    </div>
+    <!-- // END Button-->
 
     <!-- // CARROUSEL -->
     <div>
@@ -252,7 +250,32 @@
     <!-- //END CARROUSEL -->
 
     <!-- // DRAWER -->
-    <div />
+    <h1 id="Drawer">Drawer</h1>
+    <p>
+      The Drawer component is a panel that slides out from the edge of the
+      screen. It can be useful when you need users to complete a task or view
+      some details without leaving the current page.
+    </p>
+    <Drawer />
+
+    <h3>Usage</h3>
+    <pre><code> {'<Drawer props1="props1" props2="props2"/>'} </code></pre>
+    <h3>Props</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td>propsName</td>
+          <td>Type</td>
+          <td>"example"</td>
+        </tr>
+      </table>
+    </div>
     <!-- // END DRAWER -->
 
     <!-- //GRADIENT GENERATOR -->
@@ -354,8 +377,8 @@
       </p>
 
       <Player pathAudio="/src/assets/apdl.mp4" />
-      
-      <br>
+
+      <br />
 
       <Player pathAudio="/src/assets/antidote.mp3" />
 
@@ -439,7 +462,7 @@
         It's a timer. You can let it count onMounted of the page or you can use
         some controls and inputs to set the value of the timer.
       </p>
-      <Timer displayControls={true} displayInputs={true}/>
+      <Timer displayControls={true} displayInputs={true} />
       <h3>Usage</h3>
       <pre><code> {'<Timer colorTimer="black" displayInputs={true} displayControls={true} minutesTimer={1} secondsTimer={45} />'} </code></pre>
       <h3>Props</h3>

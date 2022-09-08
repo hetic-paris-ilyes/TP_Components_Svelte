@@ -56,11 +56,11 @@
   we're going to style the label instead */
 
   #drawer-toggle {
-    position: absolute;
+    /* position: absolute; */
     opacity: 1;
   }
 
-  #drawer-toggle-label {
+  /* #drawer-toggle-label {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -74,7 +74,7 @@
     position: relative;
     background: rgba(255, 255, 255, 0);
     z-index: 1;
-  }
+  } */
 
   /* adds our "hamburger" menu icon */
 
